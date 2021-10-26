@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+.coming-soon {
+    background: url(https://images.alphacoders.com/117/1173124.jpg);
+    height: 100vh;
+    background-size: cover;
+    animation: transitionIn 7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.dub {
+    margin-top: 45%;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(240, 231, 231);
+    border: 1px solid rgb(12, 18, 31);
+    letter-spacing: 3px;
+    font-family: 'Abel', sans-serif;
+}
+
+.dub:hover {
+    background-color: #135ba334;
+}
+
+@keyframes transitionIn {
+    from {
+       opacity: 0;
+       transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+        transition: ease-in;
+    }
+}
+
+@media (max-width: 600px) {
+    .coming-soon {
+    background: url(https://www.mordeo.org/files/uploads/2018/09/Kratos-Atreus-God-of-War-Fan-Artwork-4K-Ultra-HD-Mobile-Wallpaper.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-size: cover;
+    animation: transitionIn 7s;
+    }
+
+    .dub {
+        margin-top: 90%;
+        border: none;
+        letter-spacing: 6px;
+        color: rgb(204, 130, 103);
+    }
+}
